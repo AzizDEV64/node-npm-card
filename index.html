@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Node.js projelerinde en çok kullanılan ve en faydalı 100 npm paketi. Türkçe açıklamalar, kurulum komutları ve kullanım örnekleri ile.">
+    <title>Top 100 NPM Paketi | Node.js Geliştiricileri İçin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Tema Toggle -->
+    <button class="theme-toggle" id="themeToggle" title="Tema Değiştir" onclick="toggleTheme()">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+        </svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+        </svg>
+    </button>
+
+    <!-- Arka plan parçacıkları -->
+    <div class="bg-particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+
+    <!-- Hero Bölümü -->
+    <header class="hero" id="hero">
+        <div class="hero-content">
+            <div class="hero-badge">📦 Node.js Ekosistemi</div>
+            <h1 class="hero-title">
+                En Popüler <span class="gradient-text">100 NPM</span> Paketi
+            </h1>
+            <p class="hero-description">
+                Node.js projelerinde en çok kullanılan ve en faydalı npm paketlerini keşfedin.
+                Türkçe açıklamalar, kurulum komutları ve kullanım örnekleriyle birlikte.
+            </p>
+            <div class="hero-stats">
+                <div class="stat">
+                    <span class="stat-number" id="totalPackages">100</span>
+                    <span class="stat-label">Paket</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number" id="totalCategories">18</span>
+                    <span class="stat-label">Kategori</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-number">∞</span>
+                    <span class="stat-label">Olasılık</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Arama ve Filtre -->
+    <section class="controls" id="controls">
+        <div class="search-wrapper">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <input type="text" id="searchInput" class="search-input"
+                placeholder="Paket ara... (ör: express, lodash, jest)">
+            <span class="search-shortcut">Ctrl+K</span>
+        </div>
+        <div class="filter-buttons" id="filterButtons"></div>
+        <div class="results-info">
+            <span id="resultsCount">100 paket gösteriliyor</span>
+        </div>
+    </section>
+
+    <!-- Kartlar -->
+    <main class="cards-grid" id="cardsGrid"></main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ for Node.js Geliştiricileri | 2026</p>
+    </footer>
+
+    <script src="packages1.js"></script>
+    <script src="packages2.js"></script>
+    <script src="extras.js"></script>
+    <script src="codes1.js"></script>
+    <script src="codes2.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
